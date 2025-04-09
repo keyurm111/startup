@@ -1,0 +1,96 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 217 33% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 20%;
+    --input: 217 33% 17%;
+    --ring: 224 76% 48%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-startup-darker text-foreground;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+  }
+  
+  input, textarea, select {
+    @apply bg-startup-input text-white rounded-lg border-0 focus:ring-startup-blue focus:ring-2 focus-visible:outline-none;
+  }
+}
+
+@layer components {
+  .tab-button {
+    @apply px-4 py-2 text-white/75 hover:text-white transition-colors border-b-2 border-transparent;
+  }
+  
+  .tab-button.active {
+    @apply text-white border-startup-blue font-medium;
+  }
+  
+  .form-label {
+    @apply block text-white mb-2 font-medium;
+  }
+  
+  .input-field {
+    @apply w-full p-3 bg-startup-input text-white rounded-lg border-0 focus:ring-startup-blue focus:ring-2;
+  }
+  
+  .textarea-field {
+    @apply w-full p-3 bg-startup-input text-white rounded-lg border-0 focus:ring-startup-blue focus:ring-2 min-h-32;
+  }
+}
+
+@layer utilities {
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+  
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-startup-blue to-blue-400;
+  }
+}
