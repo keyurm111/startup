@@ -26,7 +26,7 @@ export interface ValidationResponse {
     investment_analysis: string;
 }
 
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = 'https://startupsparkai-backend.onrender.com';
 
 export const api = {
     validateStartup: async (startupInfo: StartupInfo): Promise<ValidationResponse> => {
