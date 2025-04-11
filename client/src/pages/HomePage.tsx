@@ -7,6 +7,7 @@ import { Rocket, Brain, CheckCircle, Users, LineChart, Shield, ChevronRight } fr
 import SuccessStories from '@/components/SuccessStories';
 import ReviewForm from '@/components/ReviewForm';
 import HeroBackground from '@/components/HeroBackground';
+import Footer from '@/components/Footer';
 
 const HomePage = () => {
   return (
@@ -197,19 +198,7 @@ const HomePage = () => {
           </div>
         </section>
 
-        {/* Review Form Section */}
-        <section className="py-16 md:py-24 px-4">
-          <div className="mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold !text-white mb-4">Help Us Improve</h2>
-              <p className="text-gray-300">
-                Your feedback is invaluable to us. Share your thoughts on our AI validator to help us make it even better for your needs.
-              </p>
-            </div>
-            <ReviewForm />
-          </div>
-        </section>
-
+       
         {/* CTA Section */}
         <section className="py-16 md:py-24 px-4">
           <div className="mx-auto text-center">
@@ -227,51 +216,8 @@ const HomePage = () => {
             </Link>
           </div>
         </section>
-
-        {/* Footer */}
-        <footer className="py-12 px-4 border-t border-gray-800">
-          <div className="mx-auto">
-            <div className="grid md:grid-cols-4 gap-8">
-              <div>
-                <Logo />
-                <p className="mt-4 text-gray-400">
-                  AI-powered startup idea validation to help entrepreneurs succeed.
-                </p>
-              </div>
-              <div>
-                <h4 className="text-white font-medium mb-4">Product</h4>
-                <ul className="space-y-2">
-                  <li><a href="#" className="text-gray-400 hover:text-startup-blue transition-colors">Features</a></li>
-                  <li><a href="#" className="text-gray-400 hover:text-startup-blue transition-colors">Case Studies</a></li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="text-white font-medium mb-4">Resources</h4>
-                <ul className="space-y-2">
-                  <li><a href="#" className="text-gray-400 hover:text-startup-blue transition-colors">Blog</a></li>
-                  <li><a href="#" className="text-gray-400 hover:text-startup-blue transition-colors">Guides</a></li>
-                  <li><a href="#" className="text-gray-400 hover:text-startup-blue transition-colors">Support</a></li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="text-white font-medium mb-4">Company</h4>
-                <ul className="space-y-2">
-                  <li><a href="#" className="text-gray-400 hover:text-startup-blue transition-colors">About Us</a></li>
-                  <li><a href="#" className="text-gray-400 hover:text-startup-blue transition-colors">Careers</a></li>
-                  <li><a href="#" className="text-gray-400 hover:text-startup-blue transition-colors">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-            <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-              <p className="text-gray-400 mb-4 md:mb-0"> 2025 Startup Idea Validator. All rights reserved.</p>
-              <div className="flex gap-6">
-                <a href="#" className="text-gray-400 hover:text-startup-blue transition-colors">Privacy Policy</a>
-                <a href="#" className="text-gray-400 hover:text-startup-blue transition-colors">Terms of Service</a>
-              </div>
-            </div>
-          </div>
-        </footer>
       </div>
+      <Footer />
     </div>
   );
 };

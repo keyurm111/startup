@@ -41,7 +41,7 @@ const Navigation = () => {
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-startup-blue transition-all duration-300 group-hover:w-full"></span>
           </Link>
           <Link 
-            to="#how-it-works" 
+            to="/how-it-works" 
             className="text-white hover:text-startup-blue transition-colors duration-200 relative group"
           >
             How It Works
@@ -50,7 +50,10 @@ const Navigation = () => {
         </div>
         
         <div className="hidden md:block">
-          <Button className="bg-startup-blue hover:bg-startup-darkBlue text-white px-6 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">
+          <Button 
+            className="bg-startup-blue hover:bg-startup-darkBlue text-white px-6 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+            onClick={() => window.location.href = '/ai-validator'}
+          >
             Get Started
           </Button>
         </div>
@@ -75,13 +78,16 @@ const Navigation = () => {
               Idea Validator
             </Link>
             <Link 
-              to="#how-it-works" 
+              to="/how-it-works" 
               className="text-white hover:text-startup-blue transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               How It Works
             </Link>
-            <Button className="bg-startup-blue hover:bg-startup-darkBlue text-white w-full">
+            <Button 
+              className="bg-startup-blue hover:bg-startup-darkBlue text-white w-full"
+              onClick={() => window.location.href = '/ai-validator'}
+            >
               Get Started
             </Button>
           </div>

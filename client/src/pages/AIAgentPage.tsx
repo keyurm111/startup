@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Navigation from '@/components/Navigation';
 import Header from '@/components/Header';
@@ -7,6 +6,7 @@ import IdeaBasicsForm from '@/components/IdeaBasicsForm';
 import BusinessModelForm from '@/components/BusinessModelForm';
 import TeamTractionForm from '@/components/TeamTractionForm';
 import ResultScreen from '@/components/ResultScreen';
+import Footer from '@/components/Footer';
 import { useToast } from '@/hooks/use-toast';
 import { api, StartupInfo, ValidationResponse } from '@/services/api';
 
@@ -176,6 +176,7 @@ const AIAgentPage = () => {
           )}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

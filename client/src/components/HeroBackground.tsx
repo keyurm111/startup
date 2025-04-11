@@ -1,4 +1,5 @@
 import React from 'react';
+import './HeroBackground.css';
 
 const HeroBackground: React.FC = () => {
   return (
@@ -65,36 +66,7 @@ const HeroBackground: React.FC = () => {
         />
       </div>
 
-      <style jsx global>{`
-        @keyframes sunRise {
-          0% { 
-            transform: translateY(60%) translateZ(-600px) scale(0.85);
-            box-shadow: 0 0 120px rgba(59,130,246,0.8), 0 0 300px rgba(96,165,250,0.5);
-            opacity: 0;
-          }
-          100% { 
-            transform: translateY(0%) translateZ(-500px) scale(1);
-            boxShadow: 0 0 180px rgba(59,130,246,1), 0 0 350px rgba(96,165,250,0.6);
-            opacity: 1;
-          }
-        }
 
-        @keyframes pulseGlow {
-          0% { transform: translateZ(150px) scale(1); opacity: 0.4; }
-          100% { transform: translateZ(150px) scale(1.1); opacity: 0.6; }
-        }
-
-        @keyframes hazeShift {
-          0% { transform: translateZ(200px) translateX(-15px) scale(1); opacity: 0.15; }
-          50% { transform: translateZ(200px) translateX(0px) scale(1.06); opacity: 0.2; }
-          100% { transform: translateZ(200px) translateX(15px) scale(1); opacity: 0.15; }
-        }
-
-        @keyframes dustFloat {
-          0% { transform: translateZ(250px) translateY(-8px) rotate(0deg); }
-          100% { transform: translateZ(250px) translateY(8px) rotate(2deg); }
-        }
-      `}</style>
     </div>
   );
 };
