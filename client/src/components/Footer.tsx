@@ -56,7 +56,7 @@ export default function Footer() {
             <div className="flex items-center justify-center gap-1 sm:gap-2 w-full">
               <span>Developed by </span>
               <a 
-                href="https://xdev.onrender.com" 
+                href="https://xdevsolutions.com/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-startup-blue hover:underline font-bold text-base mb-1"
